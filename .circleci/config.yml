@@ -9,4 +9,5 @@ jobs:
     parallelism: 4 
     resource_class: jkscci/k8-eks
     steps:
-      - run: sleep 10s && echo "Hi I'm on Runners!"
+      - run: sleep 10s && echo "Hi I'm on Runners 1!"
+      - run: sleep 10s && echo "Hi I'm on Runners 2!"
