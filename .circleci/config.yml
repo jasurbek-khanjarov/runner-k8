@@ -6,8 +6,9 @@ workflows:
 jobs:
   runner-test:
     machine: true
-    parallelism: 4 
+    parallelism: 2
     resource_class: jkscci/k8-eks
     steps:
       - run: sleep 10s && echo "Hi I'm on Runners 1!"
       - run: sleep 10s && echo "Hi I'm on Runners 2!"
+      - run: sleep 10s && echo "Hi I'm on Runners 3!"
